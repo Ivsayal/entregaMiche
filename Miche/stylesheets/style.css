@@ -1,0 +1,190 @@
+/* line 7, ../sass/style.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+/* line 13, ../sass/style.scss */
+.container {
+  background-color: #ed3945;
+  margin: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 22, ../sass/style.scss */
+.logo {
+  border-radius: 50%;
+  max-width: 70%;
+  max-height: 65%;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+/* line 30, ../sass/style.scss */
+.texto-rolling {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* line 36, ../sass/style.scss */
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+  width: 90%;
+}
+
+/* line 43, ../sass/style.scss */
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  width: 100%;
+  font-style: oblique;
+  margin: 0;
+}
+
+/* line 53, ../sass/style.scss */
+.parrafos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 30%;
+  padding-top: 5%;
+}
+
+/* line 61, ../sass/style.scss */
+p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  margin: 5%;
+  font-size: 16px;
+  width: 50%;
+  color: black;
+}
+
+/* line 70, ../sass/style.scss */
+.tapas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 5% 0;
+  margin-right: 5%;
+}
+
+/* line 77, ../sass/style.scss */
+.dos-discos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 83, ../sass/style.scss */
+.dos-discos img {
+  border: 2px black;
+  margin: 1%;
+  width: 130px;
+  height: 130px;
+}
+
+/* line 90, ../sass/style.scss */
+.un-disco {
+  margin: 1%;
+}
+
+/* line 94, ../sass/style.scss */
+.un-disco img {
+  border: 2px black;
+  margin: 1%;
+  width: 130px;
+  height: 130px;
+}
+
+@media only screen and (max-width: 1100px) {
+  /* line 103, ../sass/style.scss */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 20%;
+  }
+
+  /* line 109, ../sass/style.scss */
+  .logorolling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* line 115, ../sass/style.scss */
+  .logo {
+    max-width: 50%;
+    max-height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+  }
+
+  /* line 123, ../sass/style.scss */
+  .texto {
+    width: 100%;
+    min-height: 40%;
+    margin: 0;
+  }
+
+  /* line 129, ../sass/style.scss */
+  p {
+    font-size: 20px;
+  }
+
+  /* line 134, ../sass/style.scss */
+  .tapas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* line 142, ../sass/style.scss */
+  .dos-discos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* line 147, ../sass/style.scss */
+  .dos-discos img {
+    width: 250px;
+    height: auto;
+  }
+
+  /* line 152, ../sass/style.scss */
+  .un-disco {
+    justify-content: center;
+  }
+
+  /* line 156, ../sass/style.scss */
+  .un-disco img {
+    width: 250px;
+    height: auto;
+  }
+}

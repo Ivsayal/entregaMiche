@@ -1,0 +1,162 @@
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.container {    
+    background-color: #ed3945;
+    margin: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    border-radius: 50%;
+    max-width: 70%;
+    max-height: 65%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.texto-rolling{
+    @include flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.texto {
+    @include flex;
+    flex-direction: column;
+    padding-top: 10%;
+    width: 90%;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    width: 100%;
+    font-style: oblique;
+    margin: 0;
+}
+
+.parrafos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 30%;
+    padding-top: 5%;
+}
+
+p{
+    @include flex;
+    text-align: justify;
+    margin:5%;
+    font-size: 16px;
+    width:50%;
+    color: black;
+}
+   
+.tapas {
+    @include flex;
+    margin: 0;
+    padding: 5% 0;
+    margin-right: 5%;
+}
+
+.dos-discos {
+    @include flex;
+    margin:0;
+    padding:0;
+}
+
+.dos-discos img{
+    border: 2px black;
+    margin: 1%;
+    width: 130px;
+    height: 130px;
+}
+
+.un-disco{
+    margin: 1%;
+}
+
+.un-disco img{
+    border: 2px black;
+    margin: 1%;
+    width: 130px;
+    height: 130px;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .container {
+    @include flex;
+    flex-direction: column;
+    margin: 20%;
+    }
+
+    .logorolling{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        max-width: 50%;
+        max-height: auto;
+        margin: 0;
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    .texto{
+        width: 100%;
+        min-height: 40%;
+        margin: 0;
+    }
+
+    p{
+        font-size: 20px;
+
+    }
+
+    .tapas{
+        @include flex;
+        flex-direction: column;
+        padding:5%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .dos-discos {
+        @include flex;
+        width: 100%;
+    }
+
+    .dos-discos img{
+        width: 250px;
+        height: auto;
+    }
+
+    .un-disco{
+        justify-content: center;
+    }
+
+    .un-disco img{
+        width: 250px;
+        height: auto;
+    }
+
+}    
+
